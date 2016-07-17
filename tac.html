@@ -1,0 +1,340 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BidX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!--Less styles -->
+   <!-- Other Less css file //different less files has different color scheam
+	<link rel="stylesheet/less" type="text/css" href="themes/less/simplex.less">
+	<link rel="stylesheet/less" type="text/css" href="themes/less/classified.less">
+	<link rel="stylesheet/less" type="text/css" href="themes/less/amelia.less">  MOVE DOWN TO activate
+	-->
+	<!--<link rel="stylesheet/less" type="text/css" href="themes/less/bootshop.less">
+	<script src="themes/js/less.js" type="text/javascript"></script> -->
+	
+<!-- Bootstrap style --> 
+    <link id="callCss" rel="stylesheet" href="themes/bootshop/bootstrap.min.css" media="screen"/>
+    <link href="themes/css/base.css" rel="stylesheet" media="screen"/>
+<!-- Bootstrap style responsive -->	
+	<link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="themes/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Google-code-prettify -->	
+	<link href="themes/js/google-code-prettify/prettify.css" rel="stylesheet"/>
+<!-- fav and touch icons -->
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="themes/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="themes/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
+	<style type="text/css" id="enject"></style>
+  <style>
+   @font-face { font-family: CookieMonster; src: url('font/CookieMonster.TTF'); } 
+  @font-face { font-family: Something Strange; src: url('font/Something Strange.TTF'); } 
+  @font-face { font-family: quango ; src: url('font/Quango.otf'); } 
+  @font-face { font-family: timeburnernormal; src: url('font/timeburnernormal.otf'); }  
+  
+  
+  </style>
+  </head>
+  
+<body  style="background-color:#23403F">
+<div >
+<div class="container">
+</br>
+<div  id="welcomeLine" class="row">
+</br></br>
+<div style="color:white;font-family:quango;font-size:100px;">BidX</div></br>
+	<div style="float:right"><h4 ><a href="php/logout.php" style="font-family:timeburnernormal;color:#FFFFFF;font-size:30px;"><b> Logout &nbsp;&nbsp;&nbsp;</b></a></h4></div>
+<div style="float:right"><h4 ><a href="product_register.php" style="font-family:timeburnernormal;color:#FFFFFF;font-size:30px;"><b> Sell       &nbsp;&nbsp;&nbsp;</b></a></h4></div>
+
+</div>
+
+
+<!-- Navbar ================================================== -->
+<div id="logoArea" class="navbar">
+<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</a>
+
+
+
+</div>
+</div>
+</div>
+<!-- Header End====================================================================== -->
+<div id="mainBody">
+	<div class="container">
+	<div class="row">
+<!-- Sidebar ================================================== -->
+	<div id="sidebar" class="span3">
+		<br>
+		<ul id="sideManu" class="nav nav-tabs nav-stacked">
+			<li class="subMenu open"><a style="font-family:timeburnernormal;font-size:18px;"> ELECTRONICS </a>
+				<ul style="color:white">
+				<li><a class="active" href="products.php?var=camera" style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Cameras  </a></li>
+				<li><a href="products.php?var=computer"style="font-family:timeburnernormal;font-size:15px;"> <i class="icon-chevron-right"></i>Computers, Tablets & laptop </a></li>
+				<li><a href="products.php?var=mobile"style="font-family:timeburnernormal;font-size:15px;"><i class="icon-chevron-right"></i>Mobile Phone </a></li>
+				<li><a href="products.php?var=television"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Television</a></li>
+				<li><a href="products.php?var=refrigerator"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Refrigerators</a></li>
+				</ul>
+			</li>
+			<li class="subMenu"><a style="font-family:timeburnernormal;font-size:18px;"> HOME AND FURNITURE  </a>
+			<ul style="display:none">
+				<li><a href="products.php?var=bed"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Bed</a></li>
+				<li><a href="products.php?var=sofa"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Sofa</a></li>												
+				<li><a href="products.php?var=dining_table"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Dining Tables</a></li>	
+				<li><a href="products.php?var=cookware"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>CookWares</a></li>												
+			</ul>
+			</li>
+			<li class="subMenu"><a style="font-family:timeburnernormal;font-size:18px;">BOOKS</a>
+				<ul style="display:none">
+				<li><a href="products.php?var=best_seller"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Best Sellers</a></li>
+				<li><a href="products.php?var=literature"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Literature And Fiction</a></li>												
+				<li><a href="products.php?var=autobiography"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Autobiographies</a></li>	
+				<li><a href="products.php?var=others"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Others</a></li>												
+			</ul>
+			</li>
+			<li><a class="subMenu" style="font-family:timeburnernormal;font-size:18px;">SPORTS AND GAMINGS</a></li>
+				<ul style="display:none">
+				<li><a href="products.php?var=top"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Top Sports</a></li>
+				<li><a href="products.php?var=indoor"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Indoor Sports</a></li>
+				<li><a href="products.php?var=gaming"style="font-family:timeburnernormal ;font-size:15px;"><i class="icon-chevron-right"></i>Gaming Accessories</a></li>
+		</ul>
+		<br/>
+		  
+			
+	</div>
+<!-- Sidebar end=============================================== -->
+	<div class="span9">
+    
+	<h3 style="color:white;font-family:timeburnernormal;font-size:30px;"> Terms and Conditions</h3>	
+	<hr class="soft"/>
+	
+<p style="color:white">Welcome  to Spiro.com's online marketplace (the &quot;Site&quot;). Any person who wishes  to access the Site to buy or bid for goods or to use the other services  provided on the Site (collectively, the &quot;Services&quot;) must accept the  terms and conditions of this User Agreement, without change. PLEASE REVIEW THE  FOLLOWING TERMS OF SERVICE CAREFULLY BEFORE USING THE SITE. BY REGISTERING FOR  AND USING THE SERVICES, YOU AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS OF  THIS AGREEMENT AND ALL POLICIES AND GUIDELINES INCORPORATED BY REFERENCE.</p>
+<p style="color:white">By  bidding you agree to our user agreement and return policy.  bootshop Holdings, Inc. DBA Spiro.com (hereinafter &quot;bootshop&quot; or  &quot;Spiro.com&quot;) reserves the right to change any of the terms and  conditions contained in this Agreement or any policies or guidelines governing  the Site or Services, at any time and in its sole discretion. Any changes will  be effective upon posting of the revisions on the Site. You are responsible for  reviewing the notice and any applicable changes. Changes to referenced policies  and guidelines may be posted without notice to you. You can review the most  current version of this Agreement at any time at  http://www.Spiro.com/help/Docs/user-agreement.aspx. YOUR CONTINUED USE OF THIS  SITE AND THE SERVICES FOLLOWING bootshop'S POSTING OF ANY CHANGES WILL CONSTITUTE  YOUR ACCEPTANCE OF SUCH CHANGES OR MODIFICATIONS. IF YOU DO NOT AGREE TO ANY CHANGES  TO THIS AGREEMENT, DO NOT CONTINUE TO USE THE SERVICES OR THIS SITE.</p>
+<p style="color:white"><strong>Return Policy:</strong><br>
+  By  placing an order on this website, you indicate that you have read and agree to  the following return policies and conditions. This return policy supersedes all  other return restrictions listed on any auction page or listing. Click here to  read our website Terms and Conditions.</p>
+<p style="color:white"><strong>Returns must meet ALL  Applicable Criteria:</strong><br>
+  If  your returned product does not match all applicable criteria listed below, it  will be rejected and returned back to you at your cost. Also, your RMA will be  nullified, credit will be denied, replacement orders will not be made and you  will be charged for all shipping to and from our warehouse. By requesting an  RMA in violation of this policy you hereby agree to accept our shipment of the  return back to you and to the payment of al shipping costs to and from our  warehouse. Our arrangements with our suppliers and manufacturers allow us no  room to make exceptions.</p>
+<p style="color:white"><strong>Spiro.com Return  Policy and Procedure</strong></p>
+<ul style="color:white">
+  <li>We  offer a 100% guarantee for the first 15 calendar days. </li>
+  <li>Some  restrictions may apply and are subject to a 15% restocking fee. </li>
+  <li>Replacement  items may not be available. </li>
+</ul>
+<p style="color:white"><strong>Return Procedure:</strong></p>
+<p style="color:white">Below  please find the policies and procedures that allow us to quickly and  efficiently process your return. bootshop will be unable to process credit for  returns without a return merchandise authorization (RMA). You can create your  own RMA via your MyPage in your MyReturns section. You will need to contact our  Customer Service department for any items that have been damaged or that are  over $300.00 for an RMA. You can submit your information to our team via our  web form.</p>
+<p style="color:white">Tickets  - All sales are final. Since tickets are a one-of-a-kind item and not  replaceable, there are no refunds, exchanges or cancellations. If an event is  postponed, tickets will be honored for the rescheduled date. New tickets will  not need to be issued. If an event is cancelled without a rescheduled date, you  will receive a full refund for the amount that you paid for the tickets. Any  shipping and handling charges are not refundable.</p>
+<p style="color:white">You  must contact bootshop within 15 calendar days from the day you receive your product  to initiate a return. It is important that you include the detailed reasons  that you are requesting a return. Once your return is authorized, bootshop will  email you the RMA instructions. It is important that you follow the  instructions so that we can credit your account promptly and efficiently.</p>
+<ul style="color:white">
+  <li>Your  return must reach us within 15 calendar days from RMA issuance. Items received  after 15 days will be subject to a 15% restocking fee. Returned merchandise  received after 30 days from RMA issuance will not be refunded nor returned.</li>
+</ul>
+<ul style="color:white">
+  <li>RMA  labels must be attached to all packages being returned. The purchase invoice  must be included with the return. If there are multiple packages, a separate  copy of the invoice must be included in all packages being returned. </li>
+</ul>
+<p style="color:white"><strong>What should I do if  the product is defective and I’m in need of warranty assistance:</strong><br>
+  We  do encourage all of our customers to work with the warranty service provided on  your product. Our Customer Service center is available to make sure you get the  maximum value out of your warranty. In the event that you do not wish to pursue  warranty assistance, an RMA (return merchandise authorization) will be processed  for you for a refund. bootshop will provide you with a return label to return your  product, however the amount of the shipping label will be deducted from your  refund amount. In the event you choose to return your own package you will be  responsible for shipping and proof of delivery on all returns; therefore, for  your protection, we strongly suggest that you fully insure the package you are  returning and use a traceable method of shipping which includes a tracking  number so that you can provide proof of delivery if necessary. If you cannot  provide proof of delivery for your return, you will not receive credit for that  return.</p>
+<p style="color:white"><strong>What should I do if I  have contacted the warranty company and they will not provide assistance:</strong><br>
+  We  will promptly issue an RMA (return merchandise authorization) to return your  product to us for a refund.</p>
+<p style="color:white">In  order to return a product you must be granted a Return Merchandise  Authorization (RMA). To receive an RMA, submit your information to our Customer  Care Department, via our web form.</p>
+<p style="color:white">You  must contact bootshop within 15 days from purchase date to initiate a return. It is  important that you include the detailed reason that you are requesting a  return. Once your return is authorized, bootshop will email you the RMA and  instructions. It is important that you follow the instructions for returns or  your return may not be processed. RMA numbers cannot be extended or reissued.</p>
+<ul style="color:white">
+  <li>Your  returned items must reach us within 15 days from RMA issuance. Items received  after 15 days will not be accepted for full return. Returned merchandise  received after 30 days from RMA issuance will not be refunded nor returned.</li>
+</ul>
+<ul style="color:white">
+  <li>The  RMA label must be attached to all packages being returned. The purchase invoice  must be included with the return. If there are multiple packages, a separate  copy of the invoice must be included in all packages being returned. </li>
+</ul>
+<p style="color:white"><strong>What should I do if I  get a product and it is not as advertised:</strong><br>
+  You  must contact bootshop within 15 days of receiving your product. At that time we  will issue an RMA (return merchandise authorization) for you to return your  product to us for a full refund. A return label will also be provided to you to  return the shipment.</p>
+<p style="color:white"><strong>What should I do if I  have a product that is missing parts:</strong><br>
+  You  must contact bootshop within 15 days of receiving your product. At that time we  will issue an RMA (return merchandise authorization) for you to return your  product to us for a full refund. A return label will also be provided to you to  return the shipment.</p>
+<p style="color:white"><strong>What should I do if I  receive a product that has been damaged during shipping:</strong><br>
+  Occasionally  an item will be damaged during shipment. If you notice any damage to the box or  item, note the damage in detail on the receipt and do not accept delivery of  the package. It is important that you do not accept or sign for a damaged  package and contact our Customer Service Department immediately.  Please do not dispose any of the packaging at any time. A claim will be filed  for your package and a credit will be processed in full to your account upon  receipt at our warehouse.</p>
+<p style="color:white"><strong>What if I do not like  the product that I have received:</strong><br>
+  You  must contact bootshop within 15 days of receiving your product. At that time we  will issue an RMA (return merchandise authorization) for you to return your  product to us for a refund. You will be charged a 15% restocking fee and will  not be refunded the original shipping and handling charges or the transaction  fee. bootshop will provide you with a return label to return your product, however  the amount of the shipping label will be deducted from your refund amount. In  the event you choose to return your own package you will be responsible for  shipping and proof of delivery on all returns; therefore, for your protection,  we strongly suggest that you fully insure the package you are returning and use  a traceable method of shipping which includes a tracking number so that you can  provide proof of delivery if necessary. If you cannot provide proof of delivery  for your return, you will not receive credit for that return. The reason for  this is because once an item leaves our warehouse, we can no longer sell that  product as new or refurbished; it is now considered a used product. This  occurs even if the product is not opened.</p>
+<ul style="color:white">
+  <li>All  items will be inspected and tested by bootshop upon receipt. In order to process  your return and credit, the items will be inspected for the following:</li>
+  <li>All  items must be returned in the original condition and packaging. Specifically:  packaging materials, CDs, warranty cards, parts and accessories, promotional  items, manuals, and all other documentation provided. </li>
+  <li>Copyright  items such as DVDs, pre-recorded videos, video games, etc. must be unopened. If  defective, you may exchange these items for the same title. If we are unable to  replace the item, your account will be credited. </li>
+  <li>There  are no returns on travel packages. </li>
+  <li>Products  must be returned with all standard certification labels intact and legible (UPC  code, barcode labels, etc). </li>
+  <li>Serial  number on returned product must match serial number on record with bootshop. </li>
+  <li>Products  must be returned to bootshop in original manufacturer packaging with a qualified  external shipping container to eliminate possibility of shipping damage during  the return transport. </li>
+</ul>
+<ol style="color:white">
+  <li><strong>Eligibility</strong>.<br>
+    Use of the Site and the Services is limited  to parties that lawfully can enter into and form contracts under applicable  law. Without limiting the generality of the foregoing, minors may not use the  Services. Every person who uses the Services hereby represents to bootshop that he  or she is not a minor, is at least over the age of eighteen (18) and may  otherwise enter into and form binding contracts under applicable law. To  register, you must provide your real name, address, phone number and e-mail  address, along with other information that may be required from time to time.<br>
+    <br>
+  </li>
+  <li><strong>Applicable Policies  and Guidelines</strong>.<br>
+  You agree to abide by the procedures and  guidelines for conducting and participating in transactions on the Site, which  are contained in the Help Pages and are incorporated by reference into, and  made part of, this Agreement. The policies, procedures and guidelines contained  in the Help Pages explain the processes and set out acceptable conduct and  prohibited practices. These policies, procedures and guidelines may be changed  by bootshop in the future, and will be effective immediately upon posting, without  notice to you. You should regularly refer to the Help Pages to understand the  current procedures and guidelines related to the Site. <br>
+  <br>
+  </li>
+  <li><strong>bootshop is not an  Auctioneer</strong>.<br>
+  Although bootshop is commonly referred to as an  online auction web site, it is important to realize that we are not a  traditional &quot;auctioneer.&quot; Instead, the Site acts as a venue to allow  certain persons sell and buy certain products styles anytime, from anywhere, in a  variety of pricing formats, including a fixed price format and an auction-style  format commonly referred to as &quot;online auctions&quot; or  &quot;auctions.&quot;<br>
+  <br>
+  </li>
+  <li><strong>bootshop's Role and  Responsibilities</strong>.<br>
+  Spiro.com features two types of marketplaces,  and bootshop's role and responsibilities vary in each such marketplace. <br>
+  <br>
+  <strong>bootshop  Direct Marketplace and bootshop Certified Merchant Marketplace</strong>.<br>
+  bootshop itself is the seller of the products  offered in bootshop Direct Marketplace. bootshop undertakes responsibility for all  aspects of the transaction and the product listing, including product  descriptions, identification of quantities, establishment of starting and  maximum bid prices, establishment of reserve requirements (if any) and  shipping.  bootshop also sells through bootshop  Certified Merchants (UCMs) are bootshop approved third-party merchants who sell  products on the Site. In this program, the Certified Merchant is the seller of  the product. To ensure bootshop buyers the ability to shop in a private and secure  environment, every bootshop Certified Merchant must go through a thorough  application process including verification of bank and trade references before  they are approved to list products on the Site. bootshop Certified Merchants are  established businesses (both small and large) whose performances are monitored  to ensure that buyers receive the appropriate bootshop service levels. These  Certified Merchants list their items directly and assume responsibility for all  aspects of their product listings including product descriptions,  identification of quantities, establishment of starting and maximum bid prices,  and shipping. Although bootshop does not own, warehouse, ship or otherwise manage  any inventory or goods offered by bootshop Certified Merchants, those merchants who  do not meet bootshop's service standards can and will be removed from listing  products on the site. bootshop handles all payment processing for orders from these  merchants and bootshop's Customer Care department provides assistance for all  issues to ensure a positive bootshop experience.<br>
+  <br>
+  </li>
+  <li><strong>Spiro.com Payments</strong>.<br>
+  bootshop currently accepts credit card/debit card  payments for orders in the bootshop Direct Marketplace and the bootshop Certified  Merchant Marketplace. bootshop honors Visa, MasterCard, Discover and American  Express. You warrant that any payment method selected by you when placing a bid  shall enable you to make full and immediate payment for the item(s) chosen, if  your bid becomes the winning bid. In the event that the chosen payment method  does not enable you to make full and immediate payment for any reason,  including without limitation insufficient funds or credit decline, bootshop may in  it sole and absolute discretion cancel your bid. In such case, bootshop may in it  sole and absolute discretion (but shall not be required to) designate the next  highest bidder (meeting the applicable minimum bid or reserve requirements) as  the winning bidder. At bootshop's sole discretion, but without any obligation,  alternate payment methods may be arranged with the product purchaser(s) in the  case where a payment method has been declined. The next card on file will be  charged if your order declines. <br>
+  <br>
+  </li>
+  <li><strong>bootshop Reservation of  Rights</strong>.<br>
+bootshop retains the right, but does not have the obligation, to immediately halt any auction or product sale, prevent or restrict access to the Site or the Services or take any other action, including but not limited to canceling any affected orders, in case of technical problems, objectionable material, inaccurate listings, typographical errors in a fixed price or auction listings, inappropriately categorized items, auction inaccuracies, product inaccuracies, unlawful items, items, procedures, or actions otherwise prohibited by the procedures and guidelines contained on the Site, or for any other reason in the sole and absolute discretion of bootshop, and to correct any inaccurate listing, auction inaccuracies, product inaccuracies, inappropriately categorized items or technical problems on the Site.<br>
+  <br>
+  </li>
+  <li><strong>Your Transactions and  Obligations</strong>.<br>
+  Bidders and buyers create different  obligations by accessing the Site and using the Services.<br>
+  <br>
+  In the Certified Merchant Marketplace, the  seller must sell the product to the highest bidder that meets or exceeds the  minimum price. Similarly, if a Certified Merchant offers to sell an item by  means of the Buy Now feature, the seller must sell the item to any buyer who  elects to purchase the item through the Buy Now offer. For bidders, a bid or  Buy Now election is a legal offer to buy the product. Once the transaction  closes, both the buyer and seller are obligated to complete the transaction.<br>
+  <br>
+  By entering into this Agreement and bidding  on a product or making a Buy Now purchase, you agree to complete the  transaction as described by this Agreement. You acknowledge that by not  fulfilling these obligations, your action or inaction may be legally  actionable.<br>
+  <br>
+  If an item purchased in the bootshop Direct  Marketplace or bootshop Certified Merchant Marketplace is being shipped to a state  in which sales tax liability exists, bootshop must charge sales/use tax on the  transaction. bootshop will accept resale certificates only if submitted before the  transaction closes. In the Certified Merchant Marketplace, you agree that it is  the seller's and the buyer's responsibility to determine whether sales or use  taxes apply to the transactions and to collect, report and remit the correct  tax to the appropriate tax authority. You also agree that bootshop is not obligated  to determine whether sales or use taxes apply and is not responsible to  collect, remit or report any sales or use taxes arising from any transaction.  bootshop must charge sales tax on all Illinois sales. Other merchants may charges  tax in states they are liable to.<br>
+  <br>
+  </li>
+  <li><strong>Password Security.<br>
+  </strong>Your password may be used only to access the  Site, use the Services, electronically sign your transactions and review your  completed transactions. You are solely responsible for maintaining the security  of your password. You may not disclose your password to any third party (other  than third parties authorized by you to use your account) and are solely  responsible for any use of or action taken under your password on this Site. If  your password is compromised you must change your password.<br>
+      <br>
+    </li>
+  <li><strong>Access and Interference.<br>
+  </strong>The Site contains robot exclusion headers.  Much of the information on the Site is updated on a real time basis and is  proprietary of or is licensed to bootshop. You agree that you will not use any  robot, spider, scraper or other automated means to access the Site for any  purpose. Additionally, you agree that you will not: (a) take any action that  imposes, or may impose in our sole discretion an unreasonable or  disproportionately large load on our infrastructure; (b) copy, reproduce,  modify, create derivative works from, distribute or publicly display any  content (except as otherwise provided herein); (c) interfere or attempt to  interfere with the proper working of the Site or any activities conducted on  the Site; or (d) bypass our robot exclusion headers or other measures we may  use to prevent or restrict access to the Site. <br>
+      <br>
+    </li>
+  <li><strong>Illegal Activity <br>
+    <br>
+  </strong><strong>Compliance  with Laws; Fraud</strong>.  The Site and Services only may be used for lawful purposes and in a lawful  manner. You agree to comply with all applicable laws, statutes and regulations  regarding use of the Services, including in regard to bidding, and purchasing  items. You may not register under a false name or use an invalid or  unauthorized credit card. You may not make bids under a false name, impersonate  any participant, or use another participant's password(s). Such fraudulent  conduct is a violation of federal and state laws. Fraudulent conduct may be  reported to law enforcement, and bootshop will cooperate to ensure that violators  are prosecuted to the fullest extent of the law.<br>
+      <br>
+    <strong>Shill  Bidding</strong>.  You are strictly prohibited from placing bids or causing bids to be placed on  any product for the purpose of artificially increasing or otherwise  manipulating the bidding process on Spiro.com or the bid price of any product  listed on the Site, or influencing user behavior on Spiro.com.<br>
+      <br>
+    </li>
+  <li><strong>Breach.<br>
+  </strong>Without limiting other remedies, bootshop may  immediately issue a warning, temporarily suspend, indefinitely suspend or  terminate your membership and refuse to provide our services to you: (a) if you  breach this Agreement or the documents it incorporates by reference; (b) if  bootshop or any Certified Merchant is unable to verify or authenticate any  information you provide to bootshop; or (c) if bootshop believes that your actions may  cause legal liability for you, other bootshop users or bootshop. <br>
+      <br>
+    </li>
+  <li><strong>Privacy, Monitoring and Disclosure. <br>
+  </strong>bootshop is committed to protecting your privacy.  Click here http://www.Spiro.com/help/docs/privacy-security-policy.aspx for our  general Privacy Policy, which is incorporated by reference into, and made part  of, this Agreement. bootshop may change the Privacy Policy in the future. You  should check the Privacy Policy frequently for changes. Except as authorized  herein and unless otherwise authorized or consented, you agree not to use any  information regarding other participants which is accessible from the Site or  disclosed to you by bootshop except to enter into and complete transactions. You  agree not to use any such information for purposes of solicitation,  advertising, unsolicited e-mail or spamming, harassment, invasion of privacy,  otherwise objectionable conduct or otherwise inconsistent with our privacy  policy. <br>
+      <br>
+    <strong>Investigation.</strong> As permitted by  applicable law and consistent with our privacy policy, bootshop has the right, but  not the obligation, to monitor any activity and content associated with this  Site. bootshop may investigate any reported violation of its policies or complaints  and take any action that it deems appropriate. Such action may include, but is  not limited to, issuing warnings, suspension or termination of service, denying  access and/or removal of any materials on the Site, including listings and  bids. bootshop reserves the right and has absolute discretion, to remove, screen or  edit any content that violates these provisions or is otherwise objectionable. <br>
+      <br>
+    <strong>Disclosure  of Information</strong>.  As permitted by applicable law, bootshop also reserves the right to report any  activity that it suspects violates any law or regulation to appropriate law  enforcement officials, regulators, or other third parties. In order to  cooperate with information requests, to protect bootshop's systems and customers,  to allow users to resolve disputes, or to ensure the integrity and operation of  bootshop's business and systems or other purposes deemed reasonable by bootshop, bootshop  may access and disclose any information it considers necessary or appropriate,  including, without limitation, user contact details, IP addressing and traffic  information, usage history and posted content.<br>
+      <br>
+    </li>
+  <li><strong>No Warranties</strong><br>
+  THE SITE AND THE SERVICES ARE PROVIDED ON AN  &quot;AS IS&quot; BASIS. CUSTOMER'S USE OF AND RELIANCE THEREON ARE AT CUSTOMER'S  OWN AND SOLE RISK. bootshop MAKES NO OTHER REPRESENTATIONS OR WARRANTIES OF ANY  KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION: <br>
+    <br>
+  THE IMPLIED WARRANTIES OF MERCHANTABILITY,  FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT; <br>
+  <br>
+  THAT THE SITE OR THE SERVICES WILL MEET YOUR  REQUIREMENTS, WILL ALWAYS BE AVAILABLE, ACCESSIBLE, UNINTERRUPTED, TIMELY,  SECURE OR OPERATE WITHOUT ERROR; <br>
+  <br>
+  THE INFORMATION, CONTENT, MATERIALS OR  PRODUCTS INCLUDED ON THE SITE WILL BE AS REPRESENTED BY SELLERS, AVAILABLE FOR  SALE AT THE TIME OF OFFER, LAWFUL TO SELL, OR THAT CERTIFIED MERCHANTS WILL  PERFORM AS PROMISED; <br>
+  <br>
+  ANY IMPLIED WARRANTY ARISING FROM COURSE OF  DEALING OR USAGE OF TRADE; AND <br>
+  <br>
+  ANY OBLIGATION, LIABILITY, RIGHT, CLAIM OR  REMEDY IN TORT, WHETHER OR NOT ARISING FROM THE NEGLIGENCE OF bootshop. <br>
+  <br>
+  </li>
+  <li>  TO  THE FULL EXTENT PERMISSIBLE UNDER APPLICABLE LAW, bootshop DISCLAIMS ANY AND ALL  SUCH WARRANTIES. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, WHICH YOU  OBTAIN FROM bootshop OR THROUGH THE USE OF SERVICES SHALL CREATE ANY WARRANTY NOT  EXPRESSLY STATED IN THIS AGREEMENT.<br>
+    <br>
+  </li>
+  <li><strong>General Release</strong>.<br>
+  BECAUSE bootshop IS NOT THE SELLER IN  TRANSACTIONS BETWEEN BUYERS AND CERTIFIED MERCHANTS, IF A DISPUTE ARISES  BETWEEN ONE OR MORE PARTICIPANTS, EACH OF YOU RELEASE bootshop (AND ITS AFFILIATES,  AGENTS AND EMPLOYEES) FROM CLAIMS, DEMANDS AND DAMAGES (ACTUAL AND CONSEQUENTIAL)  OF EVERY KIND AND NATURE, KNOWN AND UNKNOWN, SUSPECTED AND UNSUSPECTED,  DISCLOSED AND UNDISCLOSED, ARISING OUT OF OR IN ANY WAY CONNECTED WITH SUCH  DISPUTES. IF YOU ARE A CALIFORNIA RESIDENT, YOU WAIVE CALIFORNIA CIVIL CODE  1542, WHICH SAYS: &quot;A GENERAL RELEASE DOES NOT EXTEND TO CLAIMS WHICH THE  CREDITOR DOES NOT KNOW OR SUSPECT TO EXIST IN HIS FAVOR AT THE TIME OF  EXECUTING THE RELEASE, WHICH IF KNOWN BY HIM MUST HAVE MATERIALLY AFFECTED HIS  SETTLEMENT WITH THE DEBTOR.&quot; YOU, BEING AWARE OF SAID CODE SECTION, HEREBY  EXPRESSLY WAIVE ANY RIGHTS YOU MAY HAVE THEREUNDER, AS WELL AS UNDER ANY OTHER  STATUES OR COMMON LAW PRINCIPLES OF SIMILAR EFFECT. YOU ACKNOWLEDGE AND AGREE  THAT THIS WAIVER IS AN ESS ENTIAL AND MATERIAL TERM OF THIS AGREEMENT, AND THAT  WITHOUT SUCH WAIVER, THIS AGREEMENT WOULD NOT HAVE BEEN ENTERED INTO BY bootshop. <br>
+  <br>
+  </li>
+  <li><strong>Limitation of  Liability</strong>.<br>
+  bootshop WILL NOT BE LIABLE FOR ANY DAMAGES OF  ANY KIND INCLUDING WITHOUT LIMITATION DIRECT, INDIRECT, INCIDENTAL, SPECIAL,  PUNITIVE AND CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THIS  AGREEMENT, THE SITE, THE SERVICES, THE INABILITY TO USE THE SERVICES OR THOSE  RESULTING FROM ANY GOODS OR SERVICES PURCHASED OR OBTAINED OR MESSAGES RECEIVED  OR TRANSACTIONS ENTERED INTO THROUGH THE SERVICES WHETHER SUCH DAMAGES ARISE  UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE.<br>
+  <br>
+  </li>
+  <li><strong>Indemnity.<br>
+  </strong>YOU AGREE TO DEFEND, INDEMNIFY AND HOLD bootshop  AND OUR SUBSIDIARIES, PARENTS, AFFILIATES, OFFICERS, DIRECTORS, AGENTS, AND  EMPLOYEES HARMLESS FROM AND AGAINST ANY AND ALL CLAIMS, LOSSES, LIABILITIES,  COSTS AND EXPENSES (INCLUDING BUT NOT LIMITED TO ATTORNEYS' FEES) ARISING FROM  OR IN CONNECTION WITH (A) YOUR BREACH OF THIS AGREEMENT, INCLUDING THE  DOCUMENTS INCORPORATED BY REFERENCE; (B) YOUR VIOLATION OF ANY STATE, FEDERAL  FOREIGN OR INTERNATIONAL LAWS, CODES OR REGULATIONS; AND/OR (C) YOUR VIOLATION  OF ANY THIRD PARTY'S RIGHTS, INCLUDING, BUT NOT LIMITED TO, INFRINGEMENT OF ANY  COPYRIGHT, VIOLATION OF ANY PROPRIETARY RIGHT AND INVASION OF ANY PRIVACY  RIGHTS. THIS OBLIGATION WILL SURVIVE THE TERMINATION OF THIS AGREEMENT.<br>
+      <br>
+    </li>
+  <li><strong>Applicable Law.<br>
+  </strong>The laws of the State of Illinois govern this  Agreement and all of its terms and conditions, without giving effect to any  principles of conflicts of laws.<br>
+      <br>
+    </li>
+  <li><strong>Arbitration.<br>
+  </strong>YOU AGREE THAT ANY CONTROVERSY OR CLAIM  ARISING OUT OF OR RELATING TO THIS AGREEMENT OR OUR SERVICES SHALL BE SETTLED  BY BINDING ARBITRATION IN ACCORDANCE WITH THE COMMERCIAL ARBITRATION RULES OF  THE AMERICAN ARBITRATION ASSOCIATION. ANY SUCH CONTROVERSY OR CLAIM SHALL BE  ARBITRATED ON AN INDIVIDUAL BASIS, AND SHALL NOT BE CONSOLIDATED IN ANY  ARBITRATION WITH ANY CLAIM OR CONTROVERSY OF ANY OTHER PARTY. THE ARBITRATION  SHALL BE CONDUCTED IN CHICAGO, ILLINOIS, AND JUDGMENT ON THE ARBITRATION AWARD  MAY BE ENTERED INTO ANY COURT HAVING JURISDICTION THEREOF. EITHER YOU OR bootshop  MAY SEEK ANY INTERIM OR PRELIMINARY RELIEF FROM A COURT OF COMPETENT  JURISDICTION IN CHICAGO, ILLINOIS, IF NECESSARY TO PROTECT THE RIGHTS OR  PROPERTY OF YOU OR bootshop PENDING THE COMPLETION OF ARBITRATION AND YOU HEREBY  IRREVOCABLY AND UNCONDITIONALLY CONSENT AND SUBMIT TO THE EXCLUSIVE  JURISDICTION OF SUCH COURTS OVER ANY SUIT, ACTION OR PROCEEDING ARISING OUT OF  THESE TERMS AND CONDITIONS. <br>
+      <br>
+    </li>
+  <li><strong>Certified Merchant Disputes.<br>
+  </strong>Because bootshop is not the seller in the actual  transaction between Certified Merchants and buyers and is not the agent of  either for any purpose, bootshop does not have the duty to resolve and will not be  involved in resolving any disputes between participants related to or arising  out of any such transaction. <br>
+      <br>
+    </li>
+  <li><strong>Licenses.<br>
+  </strong>Spiro.com grants a limited license to each participant  to make personal use only of the Site and the Services in accordance with this  Agreement. This license expressly excludes, without limitation, any  reproduction, duplication, sale, resale or other commercial use of the Site and  the Services (other than the buying and selling of items in accordance with  this Agreement), making any derivative of the Site or the Services, the  collection and use of participant e-mail addresses or other participant  information, ratings or listings, or any data extraction or data mining  whatsoever. <br>
+      <br>
+    </li>
+  <li><strong>Termination.<br>
+  </strong>bootshop, in its sole discretion, may terminate  or modify this Agreement, access to the Site or the Services, or any current  transaction immediately without notice for any reason. <br>
+      <br>
+  </li>
+  <li><strong>Copyright</strong>.<br>
+    If you believe that you have been defamed in  some manner by the bootshop Web site or your own work has been copied in a way that  constitutes copyright infringement, please provide bootshop's Copyright Agent the  following information in writing: (a) an electronic or physical signature of  the person authorized to act on behalf of the owner of the copyright interest  or the person defamed, along with your address, phone number, and email  address; (b) a description of the defamatory material, or the copyrighted work  that you believe has been infringed, and a description of where the material  that you claim is defamatory or infringing your rights is located on the bootshop  Web site; (c) a statement by you that you have a bona fide, good faith belief  that the defamatory activity has occurred or that the use by a third party of  your proprietary rights is not permitted by the copyright owner or by law; and  (d) a statement that the information provided is accurate and that, under  penalty of perjury, you are the allegedly defamed party or the copyright owner  or authorized agent to at on the copyright owner's or allegedly defamed  person's behalf. <br>
+    <br>
+    bootshop's Copyright Agent to receive the  foregoing information related to copyright infringement or defamation on its  site is: <br>
+  General Counsel <br>
+  c/o bootshop Holdings, Inc. DBA Spiro.com <br>
+  740 HillTop Drive<br>
+  Itasca, IL 60143 <br>
+  Contact Legal by email at bootshoplegal@Spiro.com<br>
+  By phone: (773) 272-5000<br>
+  <br>
+  </li>
+  <li><strong>General Provision<br>
+    <br>
+  </strong><strong>Entire  Agreement.</strong><br>
+  This Agreement and the general terms,  conditions set forth on the Site, including but not limited to those set forth  in the Help Pages, Privacy Policy and Legal Pages, constitute the entire  agreement of the parties with respect to the subject matter hereof and  supersedes and cancels all prior and contemporaneous agreements, claims,  representations and understandings of the parties in connection with the  subject matter hereof. <br>
+  <br>
+  <strong>No  Agency; Third-Party Beneficiary</strong>.<br>
+  bootshop is not the agent, fiduciary, trustee or  other representative of you. Nothing expressed or mentioned in or implied from  this Agreement is intended or shall be construed to give to any person other  than the parties hereto any legal or equitable right, remedy or claim under or  in respect to this Agreement. This Agreement and all of the representations,  warranties, covenants, conditions and provisions hereof are intended to be and  are for the sole and exclusive benefit of bootshop, its Certified Merchants and you. <br>
+  <br>
+  <strong>Severability</strong>.<br>
+  If any provision of this Agreement shall be  deemed unlawful, void, or for any reason unenforceable, then that provision  shall be deemed severable from these terms and conditions and shall not affect  the validity and enforceability of any remaining provisions. <br>
+  <br>
+  <strong>No  Waiver</strong>.<br>
+  bootshop's failure to enforce the strict  performance of any provision of this Agreement will not constitute a waiver of  bootshop's right to subsequently enforce such provision or any other provisions of  this Agreement. </li>
+</ol>
+
+
+    
+    
+   
+    <!--Ends Master--></div><!--Ends Master-->
+	
+<!--End Page-->
+
+	</div>
+</div>
+<!-- MainBody End ============================= -->
+<!-- Footer ================================================================== -->
+	<div  id="footerSection">
+	<div class="container">
+		<div class="clearfix">
+  			<h5><span style="float: left;">Copyrights &copy;. All rights Resevered</span></h5>
+  			<font size="3"> <span style="float: right;"><a href="faq.html" >FAQ</a> &nbsp;&nbsp;&nbsp; <a href="tac.html"> Terms of Use </a> &nbsp;&nbsp;&nbsp; <a href="contact.html">Contact Us</a></span></font>
+ 		</div>
+	</div><!-- Container End -->
+	</div>
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	<script src="themes/js/jquery.js" type="text/javascript"></script>
+	<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="themes/js/google-code-prettify/prettify.js"></script>
+	
+	<script src="themes/js/bootshop.js"></script>
+    <script src="themes/js/jquery.lightbox-0.5.js"></script>
+	
+	<!-- Themes switcher section ============================================================================================= -->
+
+</body>
+</html>
